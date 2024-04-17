@@ -1,59 +1,80 @@
-# Programa de consulta de API pública com JavaScript
-## Desenvolvido por: João Victor Pantoja, Letícia Leme, Lorena Valente Cavalheiro, Natália Cardoso e  Vanessa Mendonça.
+# POKEDEX - utilizando PokeAPI
+Este projeto é uma Pokedex interativa que aproveita uma API para exibir informações detalhadas sobre os Pokémon. Inspirado na famosa enciclopédia eletrônica dentro do universo Pokémon, a Pokedex permite aos usuários buscar e visualizar informações sobre Pokémon específicos por meio de seus nomes ou números de identificação. Ao digitar o nome ou número de um Pokémon desejado, os usuários podem acessar a representação visual do Pokémon, que inclui um gif animado ou uma foto estática, proporcionando uma experiência envolvente e imersiva ao explorar o vasto mundo dos Pokémon.
 
-***
+**API utilizada:** https://pokeapi.co/
 
-## Detalhes do projeto
-
-O Projeto consiste em um programa em JavaScript que faz a leitura de uma API pública, sendo esta a API https://restcountries.com/#endpoints-name . O objetivo desta aplicação, é que o usuário possa fazer uma busca de países e suas informações mais importantes, como: capital, população, continente ao qual pertence, área, moeda, língua, código do país, seu ID de chamada e Domínio de internet.
-
-**Tecnologias utilizadas**:
-
-1. JavaScript - para o back-end do projeto;
-2. Node Js - back-end;
-3. HTML, Handlebars - para o front-end do projeto;
-4. CSS - para estilização do front-end;
-6. API - https://restcountries.com/#endpoints-name
-
-***
-
-## Como funciona o sistema?
-
-Ao acessar o sistema, o usuário primeiramente se depara com a página inicial, na qual este pode ir até a barra de busca e digitar o país ao qual deseja receber informações, ou também escolher um país da lista mostrada. Em seguida, clicar em "Buscar", para que a busca seja realizada.
+## 👥Desenvolvedores do Grupo-5 ##
+- [Amanda Gois](https://github.com/httpsdinha)
+- [Brenno Ostemberg](https://github.com/brenno-ostemberg)
+- [Gustavo Fernandes](https://github.com/GustaEncinas)
+- [Júlia Campos](https://github.com/jul1aCampos)
+- [Kauan Cardoso](https://github.com/KauanPr)
 
 
-![página_inicial_API](https://github.com/Compass-pb-aws-2024-MARCO/sprint-2-pb-aws-marco/assets/163134710/f1c74c8c-2351-4f91-ab0c-ff9217765453) 
+
+## 🔧 Linguagens e tecnologias utilizadas ##
+
+- JavaScript  <img height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
+- Node.js  <img height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" />
+- HTML  <img height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" />
+- CSS  <img height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" />
+- GIT  <img height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="GIT" />
+- GitHub  <img height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" />
+- Axios  <img height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain.svg" alt="Axios" />
+- Nodemon  <img height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodemon/nodemon-original.svg" alt="Nodemon" />
+- Express  <img height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express" />
 
 
-Em seguida, o usuário terá acesso a diversas informações sobre o país de sua escolha, como capital, população e etc.
 
-![pagina_2_API](https://github.com/Compass-pb-aws-2024-MARCO/sprint-2-pb-aws-marco/assets/156237278/68ff44eb-a12c-4e2e-a584-582ce6c8e6df)
+## ⚠️Execução do sistema ##
 
-***
-
-## Como executar o projeto?
-
-- Primeiro, clone o repositório;
-``` festa
-git clone https://github.com/Compass-pb-aws-2024-MARCO/sprint-2-pb-aws-marco.git
+### Dependencias necessárias para execução ###
+```sh
+npm install express
 ```
-- Depois, instale as dependências do projeto;
-``` festa
-npm i
+```sh
+npm install axios
 ```
-- Em seguida, execute o aplicativo;
-``` festa
-npm run dev
+```sh
+npm install nodemon
 ```
-- Logo após, no navegador faça a busca do "localhost:3000";
 
-- Pronto, você terá acesso ao projeto e poderá fazer uso do mesmo.
+### Instruções de Configuração e Utilização ###
+1. **Clonando o repositório Git:**
+   - Abra o terminal.
+   - Execute o comando `git clone -b equipe5 <https://github.com/Compass-pb-aws-2024-MARCO/sprint-2-pb-aws-marco.git>` para clonar o repositório Git do projeto e mudar para a branch da equipe 5.
+
+2. **Acessando o diretório do projeto:**
+   - Navegue até o diretório do projeto usando o comando `cd <nome_do_diretorio>`.
+
+3. **Instalando as dependências:**
+   - No terminal, execute o comando `npm install <dependencia>` para instalar todas as dependências necessárias do projeto.
+
+4. **Iniciando o servidor de desenvolvimento:**
+   - Após a instalação das dependências, inicie o servidor de desenvolvimento com o comando `npm run dev`.
+
+5. **Acessando a aplicação:**
+   - Abra o navegador da web de sua preferência.
+   - No navegador, digite o endereço `http://localhost:3000` na barra de endereços e pressione Enter para acessar a aplicação.
+
+
+## POKEDEX ##
+*A interface de aplicação é uma "Pokedex" que possibilita ao usúario a interação por meio de um input "Name or number"*
+
+![Img1](/images/imgMD/img1.png)
 
 ***
 
-## Dificuldades encontradas
+*Ao colocar um número ou nome do "Pokémon" que deseja, a aplicação resgata dentro da API as informações de nome do "Pokémon" adicionando também o gif na tela.*
 
-Uma das dificuldades da execução do projeto foi a renderização dos dados do back-end com o front-end, e o entendimento de algumas questões do JavaScript, como as rotas e como elas se conectavam.
+![Img2](/images/imgMD/img2.png)
 
+***
+*A partir do número 650, os gif´s são substituidos por png´s*
 
+![Img3](/images/imgMD/img3.png)
 
+***
+*A aplicação também conta com botões de "prev" e "next", que imprime ao usúario o próximo "Pokémon" e o anterior*
+
+![Img4](/images/imgMD/img4.png)
